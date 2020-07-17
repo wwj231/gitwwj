@@ -3,7 +3,6 @@ package com.wwj231.gitwwj.service;
 import com.wwj231.gitwwj.domain.RepoGitHub;
 import com.wwj231.gitwwj.repository.GitHubRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
