@@ -1,0 +1,9 @@
+server:
+  port: 8089
+
+git-hub:
+  user: ${GIT_HUB_USER:wwj231}
+
+logging:
+  level:
+    com.wwj231.gitwwj: debug
