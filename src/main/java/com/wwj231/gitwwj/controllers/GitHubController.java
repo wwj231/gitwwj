@@ -34,4 +34,16 @@ public class GitHubController {
             return new ResponseEntity(HttpStatus.I_AM_A_TEAPOT);
         }
     }
+
+    @GetMapping("/git-repos1")
+    public ResponseEntity<List<RepoGitHub>> getGitHubRepositoriesForUser1(){
+        log.info("git hub user: [{}]", gitHubUser);
+        var result = gitHubService.getGitHubReposForUser(gitHubUser);
+
+        if(result.isPresent()){
+            return ResponseEntity.ok(result.get());
+        } else {
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        }
+    }
 }
