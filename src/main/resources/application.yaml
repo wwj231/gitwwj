@@ -3,6 +3,9 @@ server:
 
 git-hub:
   user: ${GIT_HUB_USER:wwj231}
+  desired:
+    repo: ${DESIRED_REPO:javawwa22-eshop}
+    user: ${DESIRED_USER:wwj231}
 
 logging:
   level:
